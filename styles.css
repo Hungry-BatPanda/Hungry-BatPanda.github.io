@@ -1,0 +1,22 @@
+body {
+    background-color: #21000d;
+}
+
+#content {
+    max-width: 1700px;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    color: #fffafc;
+}
+
+.description {
+    color: #fffafc;
+    font-size: 10px;
+}
