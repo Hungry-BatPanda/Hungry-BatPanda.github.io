@@ -1,16 +1,16 @@
 const routes = {
     "/": {
-        template: "/index.html",
+        template: "./index.html",
         title: "RoutineUp",
         description: "Develop powerful habits",
     },
-    "/privacy-policy": {
-        template: "/layouts/privacy-policy.html",
+    "privacy-policy": {
+        template: "./layouts/privacy-policy.html",
         title: "Privacy Policy",
         description: "",
     },
     404: {
-        template: "/layouts/404.html",
+        template: "./layouts/404.html",
         title: "404",
         description: "Page not found",
     },
@@ -28,7 +28,7 @@ const locationHandler = async () => {
     if (location.length == 0) {
         location = "/";
     }
-
+console.log("elo")
     const route = routes[location] || routes["404"];
     const html = await fetch(route.template).then((response) => response.text());
     document.getElementById("content").innerHTML = html;
