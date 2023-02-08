@@ -4,7 +4,7 @@ const routes = {
         title: "RoutineUp",
         description: "Develop powerful habits",
     },
-    "privacy-policy": {
+    "/privacy-policy": {
         template: "./layouts/privacy-policy.html",
         title: "Privacy Policy",
         description: "",
@@ -28,7 +28,7 @@ const locationHandler = async () => {
     if (location.length == 0) {
         location = "/";
     }
-console.log("elo")
+
     const route = routes[location] || routes["404"];
     const html = await fetch(route.template).then((response) => response.text());
     document.getElementById("content").innerHTML = html;
