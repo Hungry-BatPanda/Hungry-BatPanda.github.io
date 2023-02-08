@@ -40,6 +40,10 @@ const locationHandler = async () => {
 };
 
 
-window.onpopstate = locationHandler;
+window.addEventListener('popstate', function (event) {
+    console.log("elo")
+	locationHandler();
+});
+
 window.route = route;
 locationHandler();
