@@ -122,18 +122,34 @@ h1 {
     z-index: 1;
     top: 10%;
     left: 0;
+    animation: moveTop 2s ease;
 }
 
 .iphone-2 {
     z-index: 3;
     top: 0;
     right: 10%;
+    animation: moveRight 2s ease;
 }
 
 .iphone-3 {
     z-index: 2;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 30%;
+    animation: moveLeft 2s ease;
 }
 
+@keyframes moveTop {
+    from {top: 100%; opacity: 0;}
+    to {top: 10%; opacity: 1;}
+}
+
+@keyframes moveRight {
+    from {right: 100%; opacity: 0;}
+    to {right: 10%; opacity: 1;}
+}
+
+@keyframes moveLeft {
+    from {left: 100%; opacity: 0;}
+    to {left: 30%; opacity: 1;}
+}
