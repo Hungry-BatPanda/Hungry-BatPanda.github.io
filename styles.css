@@ -18,6 +18,7 @@ body {
     align-self: center;
     align-items: center;
     justify-content: space-around;
+    min-height: 600px;
 }
 
 .description-block {
@@ -152,4 +153,21 @@ h1 {
 @keyframes moveLeft {
     from {left: 100%; opacity: 0;}
     to {left: 30%; opacity: 1;}
+}
+
+@media only screen and (max-width: 600px) {
+    #content {
+        height: auto;
+    }
+
+    .logo-text {
+        position: relative;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .iphone-2 {
+        display: none;
+    }
 }
