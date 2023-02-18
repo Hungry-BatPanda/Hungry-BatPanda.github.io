@@ -160,9 +160,19 @@ h1 {
         height: auto;
     }
 
+    .presentation-block {
+        margin-top: 40px;
+        min-height: 500px;
+    }
+
     .logo-text {
         position: relative;
         margin-bottom: 20px;
+    }
+
+    .iphone-3 {
+        top: 0%;
+        animation: moveLeft 1s ease;
     }
 }
 
